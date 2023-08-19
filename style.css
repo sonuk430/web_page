@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* wrapper */
+body {
+  font-family: "Arvo";
+}
+.wrapper {
+  background-color: #080710;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: relative; */
+}
+
+.circule_one {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(#1845ad, #23a2f6);
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 400px;
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0.13);
+  width: 100%;
+  animation-name: line_animation;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+.point {
+  height: 10px;
+  width: 10px;
+  margin-top: -10px;
+  background-color: #080710;
+  border-radius: 50%;
+}
+
+.hiden_line {
+  height: 10px;
+  width: 10px;
+  margin-top: 5px;
+  background-color: #080710;
+  border-radius: 50%;
+}
+
+@keyframes line_animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.circule_two {
+  background: linear-gradient(to right, #ff512f, #f09819);
+  height: 180px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20px;
+  right: 400px;
+}
+
+.line2 {
+  display: flex;
+  justify-content: space-between;
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0.13);
+  width: 100%;
+  animation-name: line2_animation;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes line2_animation {
+  0% {
+    transform: rotate(360deg);
+  }
+  25% {
+    transform: rotate(270deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.login_page_wrapper {
+  background-color: rgba(255, 255, 255, 0.13);
+  height: 450px;
+  width: 400px;
+  color: #eaf0fb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.login_page {
+  /* background-color: rgba(255, 255, 255, 0.13); */
+  /* background-color: red; */
+  height: 100%;
+  width: 80%;
+  /* min-width: 80%; */
+  /* max-width: 95%; */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 30px; */
+}
+
+.login_page form {
+  width: 100%;
+}
+.login_page h1 {
+  margin-top: 30px;
+  /* background-color: white; */
+  /* display: block; */
+  text-align: center;
+  width: 100%;
+  font-size: 24px;
+  padding: 5px;
+  margin-bottom: 35px;
+}
+
+.login_page h5 {
+  /* background-color: white; */
+  width: 100%;
+  /* text-align: center; */
+  font-size: 15px;
+  padding: 2.5px;
+  margin-bottom: 5px;
+}
+
+.login_page input {
+  background-color: rgba(255, 255, 255, 0.07);
+  width: 100%;
+  padding: 12px;
+  border: none;
+  font-size: 12px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.login_btn {
+  width: 100%;
+  border: none;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.icons {
+  /* background-color: white; */
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.icons button {
+  /* background-color: aqua; */
+  background-color: rgba(255, 255, 255, 0.27);
+  color: #eaf0fb;
+  padding: 12px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.icons button:hover {
+  background-color: rgba(255, 255, 255, 0.47);
+}
+
+.login_page button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #eaf0fb;
+  transition: 0.4s;
+  transform: skew(5deg);
+}
